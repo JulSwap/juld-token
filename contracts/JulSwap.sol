@@ -83,7 +83,7 @@ contract JulSwap is ERC20, ERC20Detailed, ERC20Mintable, ERC20Burnable {
     }
     function getMintEnableCount() public view returns (uint256)
     {
-                uint enableCount = 0 ;
+        uint enableCount = 0 ;
         for(uint i = 0 ; i < VALIDATOR_NUMBERS; i++)
         {
             if(enableMint[i])
